@@ -64,7 +64,6 @@
                             echo "<li><a href='$ruta/paginas/duenios/duenios.php'>Dueños</a></li>
                             <li><a href='$ruta/paginas/clientes/clientes.php'>Clientes</a></li>
                             <li><a href='$ruta/paginas/testimonios/testimonios.php'>Testimonios</a></li>
-                            <li><a href='$ruta/paginas/noticias/noticias.php'>Noticias</a></li>
                             <li><a href='$ruta/paginas/citas/citas.php'>Citas</a></li>";
 
 
@@ -76,7 +75,8 @@
                         }
 
                         echo "<li><a href='$ruta/paginas/productos/productos.php'>Productos</a></li>
-                        <li><a href='$ruta/paginas/servicios/servicios.php'>Servicios</a></li>";
+                        <li><a href='$ruta/paginas/servicios/servicios.php'>Servicios</a></li>
+                        <li><a href='$ruta/paginas/noticias/noticias.php'>Noticias</a></li>";
 
                         if(isset($_SESSION['dni'])){
                             echo "<li><a href='$ruta/index.php?cerrar_sesion'>Salir</a></li>";
