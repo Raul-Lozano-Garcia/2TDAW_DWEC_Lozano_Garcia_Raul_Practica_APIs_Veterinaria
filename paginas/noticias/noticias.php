@@ -12,10 +12,6 @@
         if(isset($_COOKIE["mantener"])){
             $_SESSION["dni"]=$_COOKIE["mantener"];
         }
-    
-        if(!isset($_SESSION["dni"]) || $_SESSION["dni"]!=="000000000"){
-            header('Location: ../acceder/acceder.php');
-        }
 
     }
 ?>
@@ -55,6 +51,9 @@
 
     <main>
 
+    <?php
+        if(isset($_SESSION["dni"]) && $_SESSION["dni"]==='000000000'){
+    ?>
     <section id="insertar_modificar">
 
     <h1>Nueva noticia</h1>
@@ -81,6 +80,10 @@
     </form>
 
     </section>
+
+    <?php
+        }
+    ?>
 
     <section id="noticiasPagina">
 
