@@ -1,20 +1,6 @@
 <?php
-    session_start();
+    session_start();    
 
-    if(isset($_COOKIE["mantener"])){
-        $_SESSION["dni"]=$_COOKIE["mantener"];
-    }
-
-    if(!isset($_SESSION["dni"])){
-        header('Location: ../acceder/acceder.php');
-    }else if($_SESSION["dni"]!=="000000000"){
-        header('Location: ../acceso_denegado.php');
-    }
-    
-?>
-
-<?php
-    
 	//Cabeceras
 	header('Content-Type: application/json');
 	header("Access-Control-Allow-Origin: *");

@@ -1,10 +1,6 @@
 <?php
 
     session_start();
-
-    if(isset($_COOKIE["mantener"])){
-        $_SESSION["dni"]=$_COOKIE["mantener"];
-    }
  
     header('Content-Type: application/json');
     header("Access-Control-Allow-Origin: *");
